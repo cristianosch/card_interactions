@@ -1,0 +1,55 @@
+body{
+    background: #dcf5ff;
+    margin:0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Nunito','sans-serif';
+}
+
+.container{
+    width: 300px;
+    height: 400px;    
+    border-radius: 10px
+}
+
+.container:hover .inner{
+    clip-path: circle(75%);
+    background: #cc439e;
+}
+
+.container .inner{
+    background: #00b6ff;
+    padding: 1em;
+    border-radius:10px;
+    padding-top:40px;
+    width: 250px;
+    clip-path: circle(20% at 80% 20%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.container .inner h1{
+    color:white;
+    margin:0;
+}
+
+.container .inner p{
+    margin-top: 25%;
+    color:white;
+    font-size: 1em;
+}
+
+.container span{
+    float: right;
+    color:white;
+    font-weight: bold;
+    transition: color .5s;
+    position: relative;
+    margin-right: 1%;
+}
+
+.container:hover span{
+    color:rgba(255,255,255,0);    
+}
